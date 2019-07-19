@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 export var firebaseConfig = {
-    apiKey: "AIzaSyCqZAos3AZMLN8X64Gprz46zE_GxBU9Iz4",
+    apiKey: "",
     authDomain: "foodappperu.firebaseapp.com",
     databaseURL: "https://foodappperu.firebaseio.com",
     projectId: "foodappperu",
