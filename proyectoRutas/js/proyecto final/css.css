@@ -1,0 +1,46 @@
+body {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (51).jpg")no-repeat center center;
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+#boton{
+    margin-top: 300px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-circle.btn-xl {
+    width: 200px;
+    height: 200px;
+    padding: 10px 16px;
+    border-radius: 1000px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
