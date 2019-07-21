@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Hello, world!</title>
+    </head>
+<body>
+ 
+     <!-- Este menu es para todos -->
+     <div>
+            <!-- modulo de navegacion-->
+            <div class="modal fade" id="modalIniciarSesion">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Iniciar Sesión</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form autocomplete="off">
+                                <div class="form-group">
+                                    <label for="inputEmail">Correo Electrónico:</label>
+                                    <input type="email" id="inputEmail" name="inputEmail" class="form-control"
+                                        placeholder="Ejm: AlgunCorreoa@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Contraseña:</label>
+                                    <input type="password" id="inputPassword" name="inputPassword" class="form-control"
+                                        placeholder="Ingrese su contraseña">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="btnIngresar">
+                                Iniciar Sesion
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="modal fade" id="modalCrearCuenta">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Crea una nueva cuenta</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form autocomplete="off">
+                                <div class="form-group">
+                                    <label for="inputEmailCrear">Correo Electrónico:</label>
+                                    <input type="email" id="inputEmailCrear" name="inputEmailCrear" class="form-control"
+                                        placeholder="Ejm: AlgunCorreo@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPasswordCrear1">Contraseña:</label>
+                                    <input type="password" id="inputPasswordCrear1" name="inputPasswordCrear1"
+                                        class="form-control" placeholder="Ingrese su contraseña">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPasswordCrear2">Repita la Contraseña:</label>
+                                    <input type="password" id="inputPasswordCrear2" name="inputPasswordCrear2"
+                                        class="form-control" placeholder="Ingrese su contraseña">
+    
+                                    <small id="helpPassword" class="form-text text-muted" hidden>.......</small>
+    
+                                </div>
+                                <!-- agregando una checkboz adminitrator -->
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkAdmin">
+                                    <label class="form-check-label" for="checkAdmin">Usuario administrador</label>
+                                </div><!-- agregando una checkboz adminitrator -->
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="btnCrearCuenta">
+                                Crear Cuenta
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#"><img src="./icons/carreterasmall.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+                        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./index.html" id="pestaña_Pagina inicial">Pagina inicial <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./crear.html" id="pestaña_Crear">Crear</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ver.html" id="pestaña_Ver">Ver </a>
+                            </li>
+    
+                        </ul>
+    
+                        <div class="btn-group mr-3" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn btn-primary" id="btnUsuario">
+                                Iniciar Sesion
+                            </button>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start"
+                                    style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">
+                                    <button class="dropdown-item" id="btnIniciarSesion">
+                                        Iniciar Sesión
+                                    </button>
+                                    <button class="dropdown-item" id="btnRegistrar">
+                                        Crear Cuenta
+                                    </button>
+                                    <button class="dropdown-item" id="btnCerrarSesion">
+                                        Cerrar Sesión
+                                    </button>
+    
+    
+    
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    
+                        </form>
+                    </div>
+                </nav>
+            </header>
+    
+            <!-- modulo de navegacion-->
+        </div>
+        <!-- Este menu es para todos -->
+    PAGIAN DE VER EMPRESAS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+    <!-- Script de Auth para FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+    <!-- Script para conectarse a la base de datos en tiempo real -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="./js/utilitarios.js"></script> -->
+    <script type="module" src="./js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
