@@ -1,9 +1,10 @@
+// Your web app's Firebase configuration
 export var firebaseConfig = {
-  apiKey: "AIzaSyDWKzy9FY34K0DvsE7pUb1yIdahgdNzYb0",
-  authDomain: "jorgebd-566d3.firebaseapp.com",
-  databaseURL: "https://jorgebd-566d3.firebaseio.com",
-  projectId: "jorgebd-566d3",
-  storageBucket: "jorgebd-566d3.appspot.com",
-  messagingSenderId: "423098278508",
-  appId: "1:423098278508:web:92ea09950e13fa19"
+  apiKey: "AIzaSyCHhRWxEFvkiskcZj-sgyaXM92Ic_dOOKg",
+  authDomain: "rutasarequipaperu.firebaseapp.com",
+  databaseURL: "https://rutasarequipaperu.firebaseio.com",
+  projectId: "rutasarequipaperu",
+  storageBucket: "gs://rutasarequipaperu.appspot.com/",
+  messagingSenderId: "721796903259",
+  appId: "1:721796903259:web:2aff49c95e2ba1c9"
 };
